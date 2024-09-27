@@ -1,4 +1,14 @@
 # Time machine style backups using rsync
+
+## Notes for usage (benadamstyles)
+
+- Needs `brew install rsync`
+- Script for my usage:
+
+  ```bash
+  ~/Dev/Git/rsync-time-backup/tmbackup.sh backup /Volumes/ARCHIVE /Volumes/ARCHIVE-BACKUP /Volumes/ARCHIVE-BACKUP/backup.exclude && osascript -e ''display notification "Successfully backed up ARCHIVE disk" with title "Backup complete!"''
+  ```
+
 ## Description
 
 Time Machine style backups with rsync. Tested on Linux, but should
